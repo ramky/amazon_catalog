@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative './setup'
+
+proc = Processor.new
+proc.search_for(['led zeppelin', 'pinkfloyd', 'richard bach', 'ruby programming', 'the american president', 'true lies', 'u2', 'no country for old men'])
+proc.process

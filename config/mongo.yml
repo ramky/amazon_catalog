@@ -1,0 +1,6 @@
+MONGODB:
+  adapter: mongodb
+  database: amazon
+  host: localhost
+  port: 27017
+
