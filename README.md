@@ -1,5 +1,9 @@
 ### Overview
-This is a script to fetch the first item for a search term from the Amazon Catalog.
+This script fetches from Amazon Catalog and saves it into the mongo database.  The search terms are specified in /bin/fetch
+
+```ruby
+proc.search_for(['led zeppelin', 'pinkfloyd', 'richard bach', 'ruby programming', 'the american president', 'true lies', 'u2', 'no country for old men'])
+```
 
 ### Prerequisites
 
