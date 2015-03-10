@@ -7,6 +7,11 @@ class DatabaseUtils
 
   def save_or_update
     category = Category.find_or_create_by_name(catalog.cat_name)
+    unless category.slug
+      category.slug = catalog.cat_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+      category.save
+    end
+    
     cat = Catalog.find_or_initialize_by_asin(catalog.asin)
     set_catalog(cat, catalog)
     set_catalog_image(cat, catalog)

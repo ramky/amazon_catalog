@@ -3,4 +3,5 @@ class Category
   set_collection_name 'categories'
 
   key :name
+  key :slug
 end
